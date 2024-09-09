@@ -9,6 +9,8 @@ import { Item } from './interfaces/iItem';
 })
 export class AppComponent implements OnInit{
   title = 'app-lista-de-compras';
+
+  itemParaEditar! : Item
   
   listaDeCompras! : Array<Item>
 
@@ -16,5 +18,9 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
       this.listaDeCompras = this.service.getListaDeCompra();
+  }
+
+  editarItem(item: Item){
+    this.itemParaEditar = item;
   }
 }
