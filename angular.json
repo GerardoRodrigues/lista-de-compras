@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "life-cycle"
+  "cli": {
+    "analytics": false
+  }
 }
